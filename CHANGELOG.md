@@ -3,6 +3,11 @@
 All notable changes to the Surya Kiran Housing mobile app are documented here.
 Format based on [Keep a Changelog](https://keepachangelog.com/); versions follow [SemVer](https://semver.org/).
 
+## [1.1.1] - 2026-11-07
+
+### Fixed
+- Profile: the app version shown in the subtitle and the about dialog was hardcoded (v1.0.0 / 1.0.0+1). It now reads the installed build's real version, so it always matches the app.
+
 ## [1.1.0] - 2026-11-07
 
 ### Added
