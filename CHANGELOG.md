@@ -3,6 +3,15 @@
 All notable changes to the Surya Kiran Housing mobile app are documented here.
 Format based on [Keep a Changelog](https://keepachangelog.com/); versions follow [SemVer](https://semver.org/).
 
+## [1.1.3] - 2026-11-07
+
+### Fixed
+- Google sign-in: new users are no longer saved to the database with a placeholder profile (wing A, flat 101). Nothing is stored and no flat is assigned until you submit the "Complete Your Profile" form with the flat you picked.
+- Complete Your Profile: if saving your details fails, you now see an error and stay on the screen. Previously the app silently let you in with a local-only account that never reached the database.
+
+### Changed
+- Complete Your Profile: the flat field is now a dropdown of the real flats in the selected wing. Changing the wing clears the flat, and you can't submit without choosing one.
+
 ## [1.1.2] - 2026-11-07
 
 ### Fixed
