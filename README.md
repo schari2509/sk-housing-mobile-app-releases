@@ -8,7 +8,7 @@ Source code lives in a separate repository (`SKR/mobile_app`). This repo only di
 
 | Version | Date | Download |
 |---------|------|----------|
-| 1.1.3 | 2026-11-07 | See [Releases](../../releases/latest) |
+| 1.2.0 (build 7) | 2026-11-11 | See [Releases](../../releases/latest) |
 
 See [CHANGELOG.md](CHANGELOG.md) for the full history.
 

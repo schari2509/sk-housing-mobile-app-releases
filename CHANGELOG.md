@@ -3,6 +3,28 @@
 All notable changes to the Surya Kiran Housing mobile app are documented here.
 Format based on [Keep a Changelog](https://keepachangelog.com/); versions follow [SemVer](https://semver.org/).
 
+## [1.2.0] - 2026-11-11
+
+### Added
+- Add amenities: committee members and admins can add amenities (name, description, rules) from the Amenities screen.
+- Edit and delete bills: committee members and admins get Edit (line items and due date) and Delete on every maintenance bill.
+- Undo bill generation: after generating monthly bills, a 6-second UNDO option appears before anything is saved to the server.
+- Multiple flats: Profile → "Add another flat" links extra flats to your account using wing and flat-number dropdowns, and each extra flat can be removed. Bills for those flats show up under your account.
+- Receipt review notifications: committee members are notified when a resident uploads a payment receipt that needs approval.
+
+### Fixed
+- Receipt approval not saving: approving a receipt now saves to the database, so the bill no longer goes back to "Under review" after a refresh. If the save fails, the app no longer shows the bill as paid.
+- Bill order: maintenance bills now sort in the same flat order as the residents directory.
+- Resident count: a person who owns several flats is counted once.
+
+### Internal
+- Test suite: repaired so all 83 tests pass, and the 5 that were failing no longer depend on a live backend.
+
+### Release Notes
+- Deploy order: deploy the society-sync backend to Vercel before releasing the app. The edit-bill, link-flat and receipt-notification features need the new server code. Receipt approval also needs it, because the fix is on the server.
+- Old approvals: bills you already approved still show "Under review" in the database. Approve them again once the backend is live.
+- Firestore rules: no changes made.
+
 ## [1.1.3] - 2026-11-07
 
 ### Fixed
