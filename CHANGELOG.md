@@ -3,6 +3,26 @@
 All notable changes to the Surya Kiran Housing mobile app are documented here.
 Format based on [Keep a Changelog](https://keepachangelog.com/); versions follow [SemVer](https://semver.org/).
 
+## [1.3.0] - 2026-11-13
+
+### Added
+- Google sign-in: now asks for Owner, Tenant or Family, the same as registration.
+- Multiple flats: "Add another flat" also asks for Owner, Tenant or Family, and saves it for that flat.
+- Amenity booking: uses clock pickers for start and end time. The end time must be after the start time.
+- Amenity bookings: need committee approval before the slot is reserved.
+
+### Changed
+- Residents directory: shows the correct Owner, Family or Tenant tag for each person, and it is saved in the database.
+- Flat card: shows the flat's owner by default.
+- Committee tag: shows for a member on every flat they own. "Appoint" no longer appears for people who are already on the committee.
+- Edit Profile: uses a flat dropdown instead of a text field.
+- Amenity notifications: notifications are now targeted — new requests and cancellations go to the committee, while approvals and rejections go only to the resident who requested the booking.
+- Amenity bookings: approving a booking checks that the slot is still free.
+
+### Fixed
+- Booking purpose: now saved (previously it was being dropped).
+- Account roles: Tenant and Family are no longer saved as the account role, which treated those people as non-residents.
+
 ## [1.2.0] - 2026-11-11
 
 ### Added
