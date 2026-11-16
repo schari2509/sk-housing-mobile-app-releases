@@ -3,6 +3,14 @@
 All notable changes to the Surya Kiran Housing mobile app are documented here.
 Format based on [Keep a Changelog](https://keepachangelog.com/); versions follow [SemVer](https://semver.org/).
 
+## [1.3.1] - 2026-11-16
+
+### Fixed
+- Time display: dates and times were showing wrong because they weren't converted to your phone's timezone. This is fixed for notices, complaints and comments, events, maintenance bills, visitors, polls, amenities and notifications. Dates you create in the app now also match what other devices and the web show.
+- Notifications: tapping a notification from outside the app now takes you straight to the matching screen, such as Complaints or Notices. Committee Chat notifications used to fail to open and now work. If the app was closed, it now waits for login to finish before opening the screen. Pressing Back from there returns you to the home screen.
+- Notice details on large fonts: "Acknowledged by x residents" and "Read & Acknowledged" no longer run off the card. They now wrap onto separate lines.
+- Events screen on large fonts: for committee members, the "New Event" button no longer covers the RSVP button. The RSVP button also wraps instead of being cut off.
+
 ## [1.3.0] - 2026-11-13
 
 ### Added
